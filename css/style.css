@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    width: 400px;
+    height: 600px;
+    background-color: #C39BD3;
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.opciones {
+    display: grid;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.5em;
+    background-color: #1CEDAA;
+    border-radius: 0.4em;
+    margin-bottom: 0.3em;
+    cursor: pointer;
+    font-family: 'Delicious Handrawn', cursive;
+    color: #000000;
+    border: none;
+    font-size: 1.09em;
+}
+
+.btn:hover {
+    background-color: #1CC1ED;
+}
+
+.nombreError {
+    font-family: 'Delicious Handrawn', cursive;
+    color: red;
+    display: none;
+}
