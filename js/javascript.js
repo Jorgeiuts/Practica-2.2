@@ -57,3 +57,8 @@ function operacionesS() {
     document.write('Modulo: ' + numero1 + ' % ' + numero2 + ' = ' + modulo + ' <br/>');
 }
 
+function validacion() {
+    var form = document.getElementById('formulario');
+
+
+}
