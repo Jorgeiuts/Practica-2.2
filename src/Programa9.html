@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 9</title>
+    <link rel="icon" type="image/x-icon" href="../img/Unofficial_JavaScript_logo_2.svg.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div class="opciones" id="formulario" >
+        <p>Responda las siguientes preguntas:</p>
+        <form id="quiz">
+
+            <h3>Pregunta 1:</h3>
+
+            <p>¿Quien es el hermano de nezuco?</p>
+            <label><input type="radio" name="q1" value="a"> a)
+            Inosuke</label>
+            <br>
+            <label><input type="radio" name="q1" value="b"> b)
+            Tanjiro</label>
+            <br>
+            <label><input type="radio" name="q1" value="c"> c)
+            Zenitsu</label>
+            <br>
+
+            <h3>Pregunta 2:</h3>
+
+            <p>¿Quien fue el primer usuario de respiracion?</p>
+            <label><input type="radio" name="q2" value="a"> a)
+            Yorichi</label>
+            <br>
+            <label><input type="radio" name="q2" value="b"> b)
+            Kokushibo</label>
+            <br>
+            <label><input type="radio" name="q2" value="c"> c)
+            Muzan</label>
+            <br>
+
+            <h3>Pregunta 3:</h3>
+
+
+            <p>¿Quien fue el ultimo pilar de la flama?</p>
+            <label><input type="radio" name="q3" value="a"> a)
+            Tokito</label>
+            <br>
+            <label><input type="radio" name="q3" value="b"> b)
+            Rengoku</label>
+            <br>
+            <label><input type="radio" name="q3" value="c"> c)
+            Shinobu</label>
+            <br>
+
+            <br>
+
+            <button class="btn" type="submit">Enviar</button>
+        </form>
+
+        <div id="results" style="display: none;">
+
+        <h2>Resultados:</h2>
+
+        <p>Respuestas correctas: <span id="correct"></span></p>
+
+        <p>Respuestas incorrectas: <span id="incorrect"></span></p>
+
+        </div>
+         
+    </div>
+    <div class="opciones">
+        <a href="../index.html" class="btn">Inicio</a>
+    </div>
+    <script src="../js/javascript.js"></script>
+</body>
+</html>

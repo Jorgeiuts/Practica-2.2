@@ -48,3 +48,7 @@ a {
     color: red;
     display: none;
 }
+
+#imagen {
+    height: 400px;
+}
