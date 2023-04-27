@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 10</title>
+    <link rel="icon" type="image/x-icon" href="../img/Unofficial_JavaScript_logo_2.svg.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <form class="opciones-registro" id="registro-form" method="get">
+        <label for="nombre-usuario">Nombre de usuario:</label>
+        <input type="text" id="nombre-usuario"
+        name="nombre-usuario">
+        <br>
+        <br>
+        <label for="nombre-completo">Nombre completo:</label>
+        <input type="text" id="nombre-completo"
+        name="nombre-completo">
+        <br>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <br>
+        <label for="password-confirm">Repetir contraseña:</label>
+        <input type="password" id="password-confirm"
+        name="password-confirm">
+        <br>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <br>
+        <label>Sexo:</label>
+        <input type="radio" id="sexo-hombre" name="sexo"
+        value="Hombre">
+        <label for="sexo-hombre">Hombre</label>
+        <input type="radio" id="sexo-mujer" name="sexo"
+        value="Mujer">
+        <label for="sexo-mujer">Mujer</label>
+        <br>
+        <br>
+        <label>Hobbies:</label>
+        <input type="checkbox" id="hobby-1" name="hobbies"
+        value="Hobby 1">
+        <label for="hobby-1">Videojuegos</label>
+        <input type="checkbox" id="hobby-2" name="hobbies"
+        value="Hobby 2">
+        <label for="hobby-2">Leer</label>
+        <input type="checkbox" id="hobby-3" name="hobbies"
+        value="Hobby 3">
+        <label for="hobby-3">Pescar</label>
+        <br>
+        <br>
+        <label for="estado-civil">Estado civil:</label>
+        <select id="estado-civil" name="estado-civil">
+        <option value="">Selecciona una opción</option>
+        <option value="Soltero/a">Soltero/a</option>
+        <option value="Casado/a">Casado/a</option>
+        <option value="Divorciado/a">Divorciado/a</option>
+        <option value="Viudo/a">Viudo/a</option>
+        </select>
+        <br>
+        <br>
+        <label for="calle">Calle:</label>
+        <input type="text" id="calle" name="calle">
+        <br>
+        <br>
+        <label for="numero-interior">Número interior:</label>
+        <input type="text" id="numero-interior"
+        name="numero-interior">
+        <br>
+        <br>
+        <label for="colonia">Colonia:</label>
+        <input type="text" id="colonia" name="colonia">
+        <br>
+        <br>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" name="estado">
+        <br>
+        <br>
+        <label for="pais">País:</label>
+        <input type="text" id="pais" name="pais">
+        <br>
+        <br>
+        <label for="cp">Código postal:</label>
+        <input type="text" id="cp" name="cp">
+        <br>
+        <br>
+        <input type="submit" class="btn" id="registro-submit" onclick="formularioRegistro()" value="Registrarse">
+    </form>
+    <div class="opciones">
+        <a href="../index.html" class="btn">Inicio</a>
+    </div>
+    <script src="../js/javascript.js"></script>
+</body>
+</html>

@@ -189,3 +189,67 @@ function infoPalabra() {
     quiz.style.display = 'none';
     results.style.display = 'block';
     });
+
+    function formularioRegistro() {
+        const form = document.getElementById('registro-form');
+        const nombreUsuario = document.getElementById('nombre-usuario');
+        const nombreCompleto = document.getElementById('nombre-completo');
+        const password = document.getElementById('password');
+        const passwordConfirm = document.getElementById('password-confirm');
+        const email = document.getElementById('email');
+        const sexoHombre = document.getElementById('sexo-hombre');
+        const sexoMujer = document.getElementById('sexo-mujer');
+        const hobby1 = document.getElementById('hobby-1');
+        const hobby2 = document.getElementById('hobby-2');
+        const hobby3 = document.getElementById('hobby-3');
+        const estadoCivil = document.getElementById('estado-civil');
+        const calle = document.getElementById('calle');
+        const numeroInterior = document.getElementById('numero-interior');
+        const colonia = document.getElementById('colonia');
+        const estado = document.getElementById('estado');
+        const pais = document.getElementById('pais');
+        const cp = document.getElementById('cp');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            if (
+                nombreUsuario.value.trim() === '' ||
+                nombreCompleto.value.trim() === '' ||
+                password.value.trim() === '' ||
+                passwordConfirm.value.trim() === '' ||
+                email.value.trim() === '' ||
+                !sexoHombre.checked && !sexoMujer.checked ||
+                !hobby1.checked && !hobby2.checked && !hobby3.checked ||
+                estadoCivil.value === '' ||
+                calle.value.trim() === '' ||
+                numeroInterior.value.trim() === '' ||
+                colonia.value.trim() === '' ||
+                estado.value.trim() === '' ||
+                pais.value.trim() === '' ||
+                cp.value.trim() === ''
+            ) {
+                alert('Por favor, completa todos los campos.');
+                return;
+            }
+            if (
+                isNaN(numeroInterior.value) ||
+                isNaN(cp.value) ||
+                cp.value.length !== 5
+            ) {
+            alert('Por favor, ingresa un número válido.');
+            return;
+        }
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email.value)) {
+            alert('Por favor, ingresa un correo electrónico válido.');
+            return;
+        }
+        if (password.value !== passwordConfirm.value) {
+            alert('Las contraseñas no coinciden.');
+            return;
+        }
+        form.submit(alert('Registro exitoso.'));
+        });
+    }
+        
